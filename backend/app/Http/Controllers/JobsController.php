@@ -39,7 +39,7 @@ class JobsController extends BaseController
         $validator = Validator::make($request->all(), [
             'title' => 'required',
             'description' => 'required',
-            'salary' => 'required',
+            'salary' => 'required|numeric|gt:0',
             'company' => 'required'
         ]);
 
@@ -84,6 +84,16 @@ class JobsController extends BaseController
      */
     public function update(Request $request, $id)
     {
+        $validator = Validator::make($request->all(), [
+            'title' => 'required',
+            'description' => 'required',
+            'salary' => 'required|numeric|gt:0',
+            'company' => 'required'
+        ]);
+
+        if ($validator->fails()) {
+            return $this->sendError('Validation Error.', $validator->errors(), 422);
+        }
         $input = $request->all();
         Job::where('id', $id)->update($input);
         $job = $this->getJobs($id);
