@@ -1,0 +1,190 @@
+body {
+  font-family: TotalSans, Arial, sans-serif;
+  font-size: 14px;
+}
+
+h2 {
+  margin-top: 0px;
+  margin-bottom: 2px;
+}
+
+.container {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+.job_count {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button {
+  background-color: #4CAF50;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.card_content {
+  box-sizing: border-box;
+  border-radius: 7px;
+  background-color: #ffffff;
+  height: auto;
+  box-shadow: 0 0 0 1px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.card_content:hover {
+  box-shadow: 0 0 0 3px #169000;
+  cursor: pointer;
+}
+
+.job_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.job_name a {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  display: inline;
+  vertical-align: bottom;
+  color: #169000;
+  -webkit-text-decoration: none;
+  text-decoration: underline;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.edit_job {
+  margin-right: 5px;
+  color: #169000;
+}
+
+.company_name {
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.salary_range {
+  box-sizing: border-box;
+  margin-bottom: 2px;
+  min-width: 0;
+  font-weight: 400;
+  color: #4A4A4A;
+  line-height: 24px;
+}
+
+.posting_date {
+  line-height: 24px;
+  font-weight: 400;
+  color: #4A4A4A;
+}
+
+.job_description {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  font-weight: 400;
+  color: #616161;
+  white-space: pre-line;
+  margin-top: 10px;
+}
+
+.job_description a {
+  text-decoration: underline;
+  margin-left: 10px;
+  color: #169000;
+}
+
+.form {
+  max-width: 30rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.formLabel {
+  margin-bottom: 0.25rem;
+}
+
+.formField {
+  padding: 0.5rem;
+}
+
+.formFieldError {
+  border: 1px solid #e11d48;
+}
+
+.formFieldErrorMessage {
+  color: #e11d48;
+}
+
+.formActions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.formSubmitBtn {
+  padding: 0.5rem 0.7rem;
+  min-width: 5rem;
+  background-color: #9333ea;
+  color: #f3e8ff;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+#contact input[type="text"],
+#contact input[type="number"],
+#contact textarea {
+  width: 100%;
+  border: 1px solid #CCC;
+  background: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+
+#contact textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: vertical;
+}
+
+.job_depth_view {
+  margin: 20px 0px;
+  background-color: #f8f9f7;
+  padding: 20px;
+  border-radius: 7px;
+}
+
+.view_job_description {
+  max-width: 50%;
+  margin: auto;
+  margin-top: 15px;
+}
